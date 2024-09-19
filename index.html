@@ -2,76 +2,470 @@
 	<head>
 		<title>The Cruze</title>
 		<style>
-			body{
+			
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*}
+			 body{
 				margin:0;
+				padding: 0;
 			}
 			div{
 				margin:0;
+				padding: 0;
 			}
 			h1{
 				margin:0;
+				padding: 0;
 			}
 			ul{
 				margin:0;
 				padding:0;
 			}
+			li{
+				margin:0;
+				padding:0;
+			}
+			hr{
+				margin:0;
+				padding:0;
+			}
+			button{
+				margin:0;
+				padding:0;
+			}
+			p{
+				margin:0;
+				padding:0;
+				display: block;
+			} */
+
+
+
 			#totalarea{
 				width:1200px;
-				height:3000px;
-				background:red;
+				/* height: 100%; */
+				height:5664px;
+				/* background:red; */
 				margin:0 auto;
+				/* border:solid 5px red; */
 			}
 			#mainarea{
 				width:1200px;
 				height:700px;
-				background:yellow;
+				/* background:yellow; */
 				background-image:url('image/cruze.png');
 				background-size:cover;
 			}
 			#toparea{
 				width:1200px;
-				height:50px;
-				background:transparent;
+				height:147px;
+				/* background: red; */
 			}
-			#toparea ul{
-				
+			#logoarea{
+				width:156px;
+				height:97px;
+				background:url('image/logo.png');
+				background-size:cover;
+				float:left;
+				margin: 25px;
+				/* background:green; */
 			}
-			#toparea ul li{
+			#logoarea:hover{
+				width:175px;
+				height:108px;
+				margin-right:6px;
+			}
+			#menuarea{
+				/* background:blue; */
+				width:844px;
+				height:147px;
+				float:left;
+			}
+			#menuarea ul{
+			padding-top: 25px;
+			padding-left:470px;
+			}
+			#menuarea ul li{
 				list-style:none;
 				float:left;
 			}
-			#toparea ul li a:link,#toparea ul li a:visited{
-				color:black;
+			#menuarea ul li a:link,#menuarea ul li a:visited{
+				color:silver;
 				text-decoration:none;
 				margin:10px;
 				font-size:18px;
 				font-weight:600;
 			}
-			#toparea ul li ul{
-				display:none;
+			#menuarea ul li a:hover{
+				text-decoration:underline;
 			}
-			#toparea ul li:hover ul{
+			#menuarea ul li ul{
+				display:none;
+				margin:0;
+				padding:0;
+				
+			}
+			#menuarea ul li:hover ul{
 				display:block;
 				position:absolute;
+			}
+			#menuarea ul li:hover ul li{
 				float:none;
 			}
-			#toparea ul li:hover ul li{
-				float:none;
+			#menuarea ul li:hover ul li a:hover{
+				text-decoration:underline;
+			}
+			#book a:link,#book a:visited{
+				color:silver;
+				background:dimgrey;
+				width:90px;
+				margin-top:15px;
+				padding: 10px;
+				padding-right: 2px;
+				padding-bottom:11px ;
+				float:left;
+				font-size:18px;
+				font-weight:600;
+				text-decoration:none;
+				border-radius: 15px;
+			}
+			#book a:hover{
+				color:dimgrey;
+				background:silver;
+				text-decoration:underline;
+				border-radius: 10px;
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+			}
+			#booking{
+				width:1200px;
+				height:110px;
+				/* background:aqua; */
+				float:left;
+			}
+			#bookarea{
+				width:800px;
+				height: 80px;
+				/* background: grey; */
+				margin-top:15px;
+				margin-bottom: 15px;
+				margin-left:200px;
+				margin-right: 200px;
+			}
+			#bookarea div:nth-child(1){
+				border-radius:10px 0 0 10px;
+				float:left;
+				width:170px;
+				height: 80px;		
+				background: #dfdfdf;
+			}
+			#bookarea div:nth-child(2){
+				float:left;
+				width:270px;
+				height: 80px;
+				background: #dfd99f;
+			}
+			#bookarea div:nth-child(3){
+				float:left;
+				width:170px;
+				height: 80px;
+				background: #99d99f;
+				
+			}
+			#bookarea div:nth-child(4){
+				float:left;
+				background: rgb(146, 181, 229);
+				width:190px;
+				height: 80px;
+				border-radius: 0 10px 10px 0;
+			}
+			#bookarea div button{
+				background:dimgrey;
+				color:silver;
+				border-radius:10px;
+				border-width: 0px;
+				width:100px;
+				height:40px;
+				font-size: 24px;
+				margin:20px 44px;
+				font-weight: 600;
+			}
+			#bookarea div button:hover{
+				text-decoration:underline;
+				color:dimgrey;
+				background:silver;
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 			}
 			#darea{
 				width:1200px;
-				height:1200px;
-				background:lightblue;
+				height:650px;
+				/* background:silver; */
+				float:left;
+			}
+			#darea p{
+				text-align: center;
+				/* margin-top:10px; */
+				font-size: 23px;
+				margin: 15px 100px;
+				font-family:serif;
+				font-weight: 500;
+			}
+			#darea p:nth-child(1){
+				text-align: center;
+				margin-top:40px;
+				font-size: 50px;
+				font-weight: bold;
+				font-family:georgia;
+				/* margin-top: 70px; */
+			}
+			#darea p:nth-child(2){
+				text-align: center;
+				margin-bottom:30px;
+				font-size: 35px;
+				font-weight:600;
+				font-family:garamond;
+			}
+			#darea p:nth-child(5){
+				margin-bottom: 40px;
+			}
+			#darea p:nth-child(6){
+				text-align: center;
+				margin-bottom:30px;
+				font-size: 27px;
+				font-weight:600;
+				font-family:garamond;
+				margin-bottom: 0;
+				/* margin-top: 10px; */
+			}
+			#farea{
+				width:1200px;
+				height: 2500px;
+				/* background:slateblue; */
+				float:left;
+			}
+			.f1{
+				width: 1200px;
+				height: 500px;
+				float: left;
+			}
+			/* .bg1{
+				background:lightsalmon;
+			}
+			.bg2{
+				background:darksalmon;
+			}
+			.bg3{
+				background:salmon;
+			}
+			.bg4{
+				background:indianred;
+			}
+			.bg5{
+				background:firebrick;
+			} */
+			.fareaimg{
+				/* background: yellow; */
+				float:left;
+				width: 540px;
+				height:440px;
+				margin:30px;
+				box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+			}
+			.fareaimg:hover{
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+			}
+			.faread{
+				/* background: orange; */
+				float:left;
+				width: 540px;
+				height:440px;
+				margin:30px;
+				text-align: center;
+			}
+			.faread h1{
+				font-size: 38px;
+				margin: 10px;
+				margin-top: 90px;
+			}
+			.faread p{
+				text-align:center;
+				margin: 20px;
+				font-size: 20px;
+				font-family:Tahoma;
+			}
+			#f-r{
+				background: url(image/restaurant1.jpg);
+				background-size: cover;
+				
+			}
+			#f-c{
+				background: url(image/conference.webp);
+				background-size: cover;
+				background-position: center;
+			}
+			#f-s{
+				background: url(image/spa.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+			#f-p{
+				background: url(image/pool.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+			#f-b{
+				background: url(image/bar2.jpg);
+				background-size: cover;
+				background-position: center;
+			}
+			#d2area{
+				width: 1200px;
+				height: 250px;
+				float: left;
+			}
+			#d2area p{
+				text-align: center;
+				/* margin-top:10px; */
+				font-size: 22px;
+				margin: 15px 100px;
+				font-family: serif;
+				font-weight: 500;
+				margin-top: 34px;
+			}
+			#d2area p:nth-child(1){
+				text-align: center;
+				margin-bottom:30px;
+				font-size: 35px;
+				font-weight:600;
+				font-family:garamond;
+			}
+			#photoarea{
+				width:1170px;
+				height:780px;
+				/* background: lightgreen; */
+				float:left;
+				padding: 10px 15px;
+			}
+			.photo{
+				width:360px;
+				height:360px;
+				/* background: rgb(255, 217, 0); */
+				margin: 15px;
+				float:left;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+			}
+			.photo:hover{
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+			}
+			#p-f{
+				background: url(image/feel.jpg);
+				background-size: cover;
+			}
+			#p-w{
+				background: url(image/work.jpg);
+				background-size: cover;
+			}
+			#p-e{
+				background: url(image/eat.jpg);
+				background-size: cover;
+			}
+			#p-s{
+				background: url(image/sleep.jpg);
+				background-size: cover;
+			}
+			#p-p{
+				background: url(image/play.jpg);
+				background-size: cover;
+			}
+			#p-m{
+				background: url(image/move.jpg);
+				background-size: cover;
+			}
+			.photom{
+				background:grey;
+				width:110px;
+				height: 105px;
+				border-bottom:5px solid red;
+				margin-top: 230px;
+				margin-left: 230px;
+				padding-top: 20px;
+				padding-left: 20px;
+			}
+			.photom p{
+				font-size: 22px;
+				margin-top: 40px;
+				color:white;
+
+			}
+			.photom a:active,.photom a:visited{
+				background:black;
+				margin: 40px;
+				text-align: center;
+				color:lightgreen;
+				margin-left: 50px;
+				text-decoration: none;
+			} 
+			.photom a:hover{
+				color:black;
+				text-decoration: none;
 			}
 			#maparea{
 				width:1200px;
 				height:400px;
-				background:silver;
+				/* background:silver; */
+				float: left;
+			}
+			#mapd{
+				width: 460px;
+				height: 360px;
+				float:left;
+				/* background: orange; */
+				margin:10px;
+				margin-top: 20px;
+				margin-left: 30px;
+			}
+			#mapd h1{
+				margin: 20px;
+				margin-top: 30px;
+			}
+			#mapi{
+				width: 660px;
+				height: 360px;
+				float:left;
+				/* background: orange; */
+				margin:10px;
+				margin-top: 20px;
+				box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.4) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+			}
+			#mapi:hover{
+				box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
 			}
 			#footerarea{
 				width:1200px;
 				height:300px;
-				background:blue;
+				background:black;
+				border-bottom: solid rgb(255, 0, 0) 4px;
+				float: left;
+			}
+			#footerarea div:nth-child(1){
+				float: left;
+				width: 400px;
+				height: 300px;
+				color:white;
+			}
+			#footerarea div:nth-child(2){
+				float: left;
+				width: 400px;
+				height: 300px;
+				color:white;
+			}
+			#footerarea div:nth-child(3){
+				float: left;
+				width: 400px;
+				height: 300px;
+				color:white;
 			}
 		</style>
 	</head>
@@ -79,29 +473,166 @@
 		<div id="totalarea">
 			<div id="mainarea">
 				<div id="toparea">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a>
-							<ul>
-								<li><a href="#">About1</a></li>
-								<li><a href="#">About2</a></li>
-								<li><a href="#">About3</a></li>
-							</ul>
-						</li>
-						<li><a href="#">Gallary</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
+					<div id="logoarea">
+					</div>
+					<div id="menuarea">
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">About</a>
+								<ul>
+									<li><a href="#">About1</a></li>
+									<li><a href="#">About2</a></li>
+									<li><a href="#">About3</a></li>
+								</ul>
+							</li>
+							<li><a href="#">Gallary</a></li>
+							<li><a href="#">Offers</a></li>
+							<li><a href="#">Contact</a></li>
+						</ul>
+					</div>
+					<div id="book">
+						<a href="#">Book Now</a>
+					</div>
+				</div>
+			</div>
+			<div id="booking">
+				<div id="bookarea">
+					<div>
+						<h1>room</h1>
+						<hr width="150px"  color="gray" size="1px"/>
+					</div>
+					<div>
+						<h1>check-in</h1>
+						<hr width="250px"  color="gray" size="1px"/>
+					</div>
+					<div>
+						<h1>guest</h1>
+						<hr width="150px"  color="gray" size="1px"/>
+					</div>
+					<div>
+						<button id="bookareab">Check</botton>
+					</div>
 				</div>
 			</div>
 			<div id="darea">
-				<h1>description</h1>
-				
+				<p>Welcome to the CRUZE</p>
+				<p>A Premium Bontique Hotel</p>
+				<p> At <b>THE CRUZE</b> (a premium bontique hotel) , our signature wellness programs empower you to maintain your routine, no matter how far from you travel . From our renowned Heavenly® Bed, to our on demand Westin LIVING options, we're here to help you be your best on the road.
+				An authentic bontique hotel, far away from the hustle and bustle, surrounded by archaic nature, and blessed with iconic architecture. Discover our discrete hideaway for individualists and epicureans. Discover a class of its own.
+				</p>
+				<p>The concept and service of the best luxury hotels in Jamshedpur in our sophisticated Executive room and Royal Suite rooms, with the possibility of enjoying a furnished terrace in our Executive Suite King Room and Royal Suite King Room.
+				</p>
+				<p>Why miss out on something when you can have it all? The surprise is in the mix and with the surprise comes enjoyment. Discover our rooms, our restaurant; the hustle and bustle of joyful Jamshedpur. Enjoy a hotel in the  Jamshedpur not far from the station and feel just a few steps away from the sonari airport. Everything accompanied by the most urban and cosmopolitan spirit. Travel, discover, share… Explore our land and feel part of it.
+				</p>
+			</div>
+			<div id="farea">
+				<div class="f1 bg1">
+					<div  class="fareaimg" id="f-r">
+					</div>
+					<div class="faread">
+						<h1>Restaurant</h1>
+						<p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.
+						</p>
+					</div>
+				</div>
+				<div class="f1 bg2">
+					<div class="faread">
+						<h1>Conference Room</h1>
+						<p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.
+						</p>
+					</div>
+					<div class="fareaimg" id="f-c">
+					</div>
+				</div>
+				<div class="f1 bg3">
+					<div class="fareaimg" id="f-s">
+					</div>
+					<div class="faread">
+						<h1>spa</h1>
+						<p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.
+						</p>
+					</div>
+				</div>
+				<div class="f1 bg4">
+					<div class="faread">
+						<h1>pool</h1>
+						<p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.
+						</p>
+					</div>
+					<div class="fareaimg" id="f-p">
+					</div>
+				</div>
+				<div class="f1 bg5">
+					<div class="fareaimg" id="f-b">
+					</div>
+					<div class="faread">
+						<h1>Bar</h1>
+						<p>The concept and service of the best luxury hotels in Asturias in our sophisticated Urban Double and Unique Junior Suite rooms, with the possibility of enjoying a furnished terrace in our Double Urban Loft and Unique Junior Loft Suite.
+						</p>
+					</div>
+				</div>
+			</div>
+			<div id="d2area">
+				<p>--Luxury with authenticity--</p>
+				<p>No two rooms are the same here at The Cruze. Some are hot pink, others are teal. Some have hand-stitched camel leather floors, others have hand-mixed lime plaster walls. But they all share our signature style: a blend of mid-century European furniture with the iconic elements of Moroccan design including hand-carved plasterwork & cedar wood ceilings. Also on our list are oversized bathtubs, soft cotton sheets and the finest mattresses.
+				</p>
+			</div>
+			<div id="photoarea">
+				<div class="photo" id="p-f">
+					<div class="photom">
+						<p>Fell well</p>
+						<a class="photol" href="#">Learn more &#10148;</a>
+					</div>
+				</div>
+				<div class="photo" id="p-w">
+					<div class="photom">
+						<p>Work well</p>
+						<a href="#">Learn more &#10148;</a>
+					</div>
+				</div>
+				<div class="photo" id="p-e">
+					<div class="photom">
+						<p>Eat well</p>
+						<a href="#">Learn more &#10148;</a>
+					</div>
+				</div>
+				<div class="photo" id="p-s">
+					<div class="photom">
+						<p>Sleep well</p>
+						<a href="#">Learn more &#10148;</a>
+					</div>
+				</div>
+				<div class="photo" id="p-p">
+					<div class="photom">
+						<p>Play well</p>
+						<a href="#">Learn more &#10148;</a>
+					</div>
+				</div>
+				<div class="photo" id="p-m">
+					<div class="photom">
+						<p>Move well</p>
+						<a href="#">Learn more &#10148;</a>
+					</div>
+				</div>
 			</div>
 			<div id="maparea">
-				<h1>map</h1>
+				<div id="mapd">
+					<h1>Come and feel the Luxary</h1>
+				</div>
+				<div id="mapi">
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d4672.0217346518075!2d86.14899859550482!3d22.790601539423125!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f5e575b8a7b7e1%3A0xcf2b2ed890ec7eee!2sThe%20Cruze!5e0!3m2!1sen!2sin!4v1725657489800!5m2!1sen!2sin" width="100%" height="100%" style="border:none;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
 			</div>
 			<div id="footerarea">
-				<h1>footer</h1>
+				<div>
+					
+				</div>
+				<div>
+	
+				</div>
+				<div>
+				
+				</div>
 			</div>
 		</div>
 	</body>
